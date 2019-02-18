@@ -1,0 +1,31 @@
+%Primer Ejercicio, ecuaciones%
+syms x a
+sol=2*x+a-5;
+solve(sol,x)
+
+%Segundo Ejercicio, ecuacion cuadratica%
+syms x a b
+Sol=x.^2+a*x+b;
+y=solve(Sol,x);
+disp(y)
+
+%Tercer ejercicio, ecuaciones%
+syms x
+sol=2*exp(x)+3*cos(x);
+y=solve(sol,x);
+disp(y)
+
+%Cuarto ejercicio, sistema de ecuaciones%
+syms x y c
+A=[2 -3*c;c 2];
+B=[5;7];
+IA=inv(A);
+Sol=IA*B
+
+%Quinto ejercicio, sistema de ecuaciones%
+syms x y
+A=[3 -2;0 1+y];
+B=[7-y;5];
+IA=inv(A);
+Sol=IA*B;
+disp(Sol)
